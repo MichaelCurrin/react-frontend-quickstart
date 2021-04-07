@@ -14,7 +14,7 @@ header {
   color: white;
   font-size: calc(10px + 2vmin);
 
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
 
