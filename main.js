@@ -4,6 +4,27 @@ import ReactDOM from "https://dev.jspm.io/react-dom";
 
 const html = htm.bind(React.createElement);
 
+function ControlledInput() {
+  const [value, setValue] = React.useState("");
+
+  const onChange = (event) => {
+    setValue(event.target.value);
+  };
+
+  return html`
+    <div>
+      <label>Name:</label>
+      <span> </span>
+      <input value=${value} onChange=${onChange} />
+
+      <br />
+      <br />
+
+      <div>My name is: ${value}</div>
+    </div>
+  `;
+}
+
 function Counter() {
   const [count, setCount] = React.useState(0);
 
@@ -21,11 +42,14 @@ function App(props) {
 
   return html`
     <div className="App">
-      <h2>Hello, ${name}!</h2>
+      <h2>Greeting with fixed value</h2>
+      <p>Hello, ${name}!</p>
 
-      <div>
-        <${Counter}/>
-      </div>
+      <h2>Display input</h2>
+      <${ControlledInput} />
+
+      <h2>Counter</h2>
+      <${Counter} />
     </div>
   `;
 }
