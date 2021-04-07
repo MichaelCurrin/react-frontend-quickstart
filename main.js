@@ -4,11 +4,17 @@ import ReactDOM from "https://dev.jspm.io/react-dom";
 
 const html = htm.bind(React.createElement);
 
-ReactDOM.render(
-  html`
+function App(props) {
+  const { name } = props;
+
+  return html`
     <div className="App">
-      <h2>Hello, World!</h2>
+      <h2>Hello, ${name}!</h2>
     </div>
-  `,
+  `;
+}
+
+ReactDOM.render(
+  html`<${App} name="developer" />`,
   document.getElementById("app")
 );
