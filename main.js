@@ -23,7 +23,9 @@ function App(props) {
     <div className="App">
       <h2>Hello, ${name}!</h2>
 
-      <${Counter}/>
+      <div>
+        <${Counter}/>
+      </div>
     </div>
   `;
 }
