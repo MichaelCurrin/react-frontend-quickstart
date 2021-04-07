@@ -50,6 +50,8 @@ function App(props) {
 
       <h2>Counter</h2>
       <${Counter} />
+
+      <br/>
     </div>
   `;
 }
