@@ -1,4 +1,4 @@
-# React Frontend Quickstart
+# React Frontend Quickstart ⚛️ 📦
 > Starter template using React on a website's frontend - without Node
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/react-frontend-quickstart?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/react-frontend-quickstart/releases/)
