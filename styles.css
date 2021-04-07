@@ -5,13 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-.App {
   text-align: center;
 }
 
-.App-header {
+header {
   background-color: #282c34;
   color: white;
   font-size: calc(10px + 2vmin);
