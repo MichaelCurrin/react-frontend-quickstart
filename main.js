@@ -7,9 +7,7 @@ const html = htm.bind(React.createElement);
 ReactDOM.render(
   html`
     <div className="App">
-      <h2>
-        Hello, World!
-      </h2>
+      <h2>Hello, World!</h2>
     </div>
   `,
   document.getElementById("app")
