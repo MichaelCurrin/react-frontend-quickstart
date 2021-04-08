@@ -24,7 +24,7 @@ function ControlledInput() {
       <br />
       <br />
 
-      <div>${value && `Welcome, ${value}` || 'Tell me your name'}</div>
+      <div>${value ? `Welcome, ${value}` : "Tell me your name"}</div>
     </div>
   `;
 }
