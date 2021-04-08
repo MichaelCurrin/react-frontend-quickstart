@@ -3,9 +3,9 @@
 
 ## What is React?
 
-- [React](https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/) resources
-
-In this project, the React version is set in [main.js](/main.js).
+- [React homepage](https://reactjs.org/)
+    > A JavaScript library for building user interfaces
+- [React resources](https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/) on my Dev Resources site.
 
 
 ## Structure
@@ -13,7 +13,7 @@ In this project, the React version is set in [main.js](/main.js).
 This project only needs 3 files to run:
 
 - [index.html](/index.html) - homepage.
-- [main.js](/main.js) - the app logic. This loads dependencies, constructs the app and then mounts it an element in the body of the HTML.
+- [main.js](/main.js) - the app logic. This loads dependencies from CDN URLs, constructs the app and then mounts it an element in the body of the HTML.
 - [styles.css](/styles.css) - some minimal CSS styling.
 
 The JS file is is loaded as an ES Module, which means we get to load `react` and `htm` with the `import` syntax and so don't need to load those as separate `script` tags on the HTML page. This keeps all your JS and dependencies together and separated from the HTML, for easy for formatting, lint and testing (like unit tests) if you choose to add those with Deno or NPM. Or maybe you just use your IDE to format and lint your JS files.
@@ -24,8 +24,8 @@ The JS file is is loaded as an ES Module, which means we get to load `react` and
 - Built on React from a CDN.
 - No build step - locally or for CI/CD. Just start a static server in the project root - locally or with GH Pages or Netlify.
 - This light React setup on the frontend is great for small and simple projects.
-- It's also adding interactive behavior to an existing site, without having to rebuild as a Node/React/React app and also while keeping the browser impact minimal (React is only 3kb).
-- You can put your JS code as a separate JS script as here with [main.js](/main.js), or even directly on your HTML page.
+- It's also adding interactive behavior to an existing site, without having to rebuild as a Node/React.
+- You can put your JS code as a separate JS script as done here with [main.js](/main.js), or even directly on your HTML page if you have a short snippet.
 - This project structure is lighter - no `package.json`, no ESLint config and no Prettier config. See limitations below around this.
 
 
