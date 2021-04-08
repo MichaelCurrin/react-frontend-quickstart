@@ -4,6 +4,10 @@ import ReactDOM from "https://dev.jspm.io/react-dom";
 
 const html = htm.bind(React.createElement);
 
+const REPO_URL = "https://github.com/MichaelCurrin/react-frontend-quickstart";
+const RESOURCES_URL =
+  "https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/";
+
 function ControlledInput() {
   const [value, setValue] = React.useState("");
 
@@ -37,6 +41,8 @@ function Counter() {
   `;
 }
 
+// Unfortunately spaces needed to be added explicitly, otherwise the Prettier tool
+// strips them out around `a` tags.
 function App(props) {
   const { name } = props;
 
@@ -54,16 +60,11 @@ function App(props) {
       <br />
 
       <p>
-        View the
-        <a href="https://github.com/MichaelCurrin/react-frontend-quickstart"
-          >source</a
-        >
-        for this static site on GitHub Pages. Learn more about React in my
-        <a
-          href="https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/"
+        View the ${" "}<a href="${REPO_URL}">source</a>${" "}for this static
+        site on GitHub Pages. Learn more about React in my ${" "}<a
+          href="${RESOURCES_URL}"
           >React resources</a
-        >
-        guide.
+        >${" "} guide.
       </p>
 
       <br />
