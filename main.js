@@ -19,9 +19,9 @@ function ControlledInput() {
 
   return html`
     <div>
-      <label>Name:</label>
+      <label hmltFor="name-input">Name:</label>
       <span> </span>
-      <input placeholder="World" value=${value} onChange=${onChange} />
+      <input id="name-input" placeholder="World" value=${value} onChange=${onChange} />
 
       <br />
       <br />
