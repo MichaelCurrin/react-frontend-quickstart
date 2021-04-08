@@ -1,12 +1,13 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   text-align: center;
+
+  /* Background color goes to page edge. */
+  margin: 0;
 }
 
 header {
@@ -20,6 +21,12 @@ header {
 
   align-items: center;
   justify-content: center;
+}
+
+/* Prevent content from going to the page edge - especially on mobile. */
+header,
+#app {
+  padding: 10px;
 }
 
 p a {
