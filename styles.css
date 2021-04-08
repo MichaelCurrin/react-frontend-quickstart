@@ -4,13 +4,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   text-align: center;
   /* Background color goes to page edge. */
   margin: 0;
 }
 
-body>* {
+body > * {
   /* Prevent content from going to the page edge - especially on mobile.
     Note this should not be on body itself otherwise it gets white edges. */
   padding-left: 15px;
