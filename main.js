@@ -51,11 +51,22 @@ function App(props) {
       <h2>Counter</h2>
       <${Counter} />
 
-      <br/>
+      <br />
 
-      <p>View the <a href="https://github.com/MichaelCurrin/react-frontend-quickstart">source</a> for this static site on GitHub Pages. Learn more about React in my <a href="https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/">React resources</a> guide.</p>
+      <p>
+        View the
+        <a href="https://github.com/MichaelCurrin/react-frontend-quickstart"
+          >source</a
+        >
+        for this static site on GitHub Pages. Learn more about React in my
+        <a
+          href="https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/"
+          >React resources</a
+        >
+        guide.
+      </p>
 
-      <br/>
+      <br />
     </div>
   `;
 }
