@@ -4,15 +4,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
   text-align: center;
-
   /* Background color goes to page edge. */
   margin: 0;
 }
 
 body>* {
   /* Prevent content from going to the page edge - especially on mobile.
-    Note this should not be on body itself otherwise that gets white edges. So we do just one level down. */
+    Note this should not be on body itself otherwise it gets white edges. */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -28,15 +28,23 @@ header {
   align-items: center;
   justify-content: center;
 
-  /* Increase height of header with empty space. */
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+#app {
+  padding-bottom: 20px;
 }
 
 p a {
   color: #41b7d8;
 }
 
-#app {
-  padding-bottom: 20px;
+button {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #41b7d8;
+  transform: translateY(2px);
 }
