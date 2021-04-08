@@ -15,6 +15,8 @@ function ControlledInput() {
     setValue(event.target.value);
   };
 
+  const msg = value ? `Welcome, ${value}` : "Tell me your name";
+
   return html`
     <div>
       <label>Name:</label>
@@ -24,7 +26,7 @@ function ControlledInput() {
       <br />
       <br />
 
-      <div>${value ? `Welcome, ${value}` : "Tell me your name"}</div>
+      <div>${msg}</div>
     </div>
   `;
 }
