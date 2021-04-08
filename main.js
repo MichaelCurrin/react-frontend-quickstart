@@ -47,7 +47,7 @@ function App(props) {
   const { name } = props;
 
   return html`
-    <div className="App">
+    <div>
       <h2>Greeting with fixed value</h2>
       <p>Hello, ${name}!</p>
 
