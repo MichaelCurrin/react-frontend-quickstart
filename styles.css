@@ -10,24 +10,29 @@ body {
   margin: 0;
 }
 
+body>* {
+  /* Prevent content from going to the page edge - especially on mobile.
+    Note this should not be on body itself otherwise that gets white edges. So we do just one level down. */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 header {
   background-color: #282c34;
   color: white;
   font-size: calc(10px + 2vmin);
 
-  min-height: 50vh;
   display: flex;
   flex-direction: column;
 
   align-items: center;
   justify-content: center;
+
+  /* Increase height of header with empty space. */
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-/* Prevent content from going to the page edge - especially on mobile. */
-header,
-#app {
-  padding: 10px;
-}
 
 p a {
   color: #41b7d8;
