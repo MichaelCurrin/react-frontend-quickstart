@@ -66,8 +66,6 @@ function App(props) {
           >React resources</a
         >${" "} guide.
       </p>
-
-      <br />
     </div>
   `;
 }
