@@ -19,11 +19,14 @@ function NameInput() {
 
   return html`
     <div>
-      <label hmltfor="name-input">
-        Name:
-      </label>
+      <label hmltfor="name-input"> Name: </label>
       <span> </span>
-      <input id="name-input" placeholder="World" value=${value} onChange=${onChange} />
+      <input
+        id="name-input"
+        placeholder="World"
+        value=${value}
+        onChange=${onChange}
+      />
 
       <br />
       <br />
@@ -44,16 +47,12 @@ function StatusInput() {
 
   return html`
     <div>
-      <label>
-        Status:
-      </label>
+      <label> Status: </label>
 
-      <br/>
-      <br/>
+      <br />
+      <br />
 
-      <button id="status-input" onClick=${toggle}>
-        ${statusMsg}
-      </button>
+      <button id="status-input" onClick=${toggle}>${statusMsg}</button>
     </div>
   `;
 }
