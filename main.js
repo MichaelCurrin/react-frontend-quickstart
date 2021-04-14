@@ -8,7 +8,7 @@ const REPO_URL = "https://github.com/MichaelCurrin/react-frontend-quickstart";
 const RESOURCES_URL =
   "https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/";
 
-function ControlledInput() {
+function NameInput() {
   const [value, setValue] = React.useState("");
 
   const onChange = (event) => {
@@ -54,7 +54,7 @@ function App(props) {
       <p>Hello, ${name}!</p>
 
       <h2>Display input</h2>
-      <${ControlledInput} />
+      <${NameInput} />
 
       <h2>Counter</h2>
       <${Counter} />
