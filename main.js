@@ -19,7 +19,9 @@ function NameInput() {
 
   return html`
     <div>
-      <label hmltFor="name-input">Name:</label>
+      <label hmltfor="name-input">
+        Name:
+      </label>
       <span> </span>
       <input id="name-input" placeholder="World" value=${value} onChange=${onChange} />
 
@@ -27,6 +29,31 @@ function NameInput() {
       <br />
 
       <div>${msg}</div>
+    </div>
+  `;
+}
+
+function StatusInput() {
+  const [checked, setChecked] = React.useState(false);
+
+  const toggle = () => {
+    setChecked(!checked);
+  };
+
+  const statusMsg = checked ? `Active` : "Inactive";
+
+  return html`
+    <div>
+      <label>
+        Status:
+      </label>
+
+      <br/>
+      <br/>
+
+      <button id="status-input" onClick=${toggle}>
+        ${statusMsg}
+      </button>
     </div>
   `;
 }
@@ -53,8 +80,11 @@ function App(props) {
       <h2>Greeting with fixed value</h2>
       <p>Hello, ${name}!</p>
 
-      <h2>Display input</h2>
+      <h2>Text input</h2>
       <${NameInput} />
+
+      <h2>Button toggle input</h2>
+      <${StatusInput} />
 
       <h2>Counter</h2>
       <${Counter} />
