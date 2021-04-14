@@ -39,7 +39,7 @@ function TextSample() {
 function ButtonSample() {
   const [pressed, setPressed] = React.useState(false);
 
-  const toggle = () => {
+  const onClick = () => {
     setPressed(!pressed);
   };
 
@@ -48,12 +48,16 @@ function ButtonSample() {
 
   return html`
     <div>
-      <label> Status: </label>
+      <label>Status: </label>
 
       <br />
       <br />
 
-      <button className=${className} id="status-input" onClick=${toggle}>
+      <button
+        className=${className}
+        id="status-button-input"
+        onClick=${onClick}
+      >
         ${msg}
       </button>
     </div>
