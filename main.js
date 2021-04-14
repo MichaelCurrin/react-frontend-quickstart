@@ -8,7 +8,7 @@ const REPO_URL = "https://github.com/MichaelCurrin/react-frontend-quickstart";
 const RESOURCES_URL =
   "https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/";
 
-function NameInput() {
+function TextSample() {
   const [value, setValue] = React.useState("");
 
   const onChange = (event) => {
@@ -36,7 +36,7 @@ function NameInput() {
   `;
 }
 
-function StatusInput() {
+function ButtonSample() {
   const [checked, setChecked] = React.useState(false);
 
   const toggle = () => {
@@ -80,10 +80,10 @@ function App(props) {
       <p>Hello, ${name}!</p>
 
       <h2>Text input</h2>
-      <${NameInput} />
+      <${TextSample} />
 
-      <h2>Button toggle input</h2>
-      <${StatusInput} />
+      <h2>Button input</h2>
+      <${ButtonSample} />
 
       <h2>Counter</h2>
       <${Counter} />
