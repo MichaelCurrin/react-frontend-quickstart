@@ -37,13 +37,13 @@ function TextSample() {
 }
 
 function ButtonSample() {
-  const [checked, setChecked] = React.useState(false);
+  const [pressed, setPressed] = React.useState(false);
 
   const toggle = () => {
-    setChecked(!checked);
+    setPressed(!pressed);
   };
 
-  const statusMsg = checked ? `Active` : "Inactive";
+  const msg = pressed ? `Active` : "Inactive";
 
   return html`
     <div>
@@ -52,7 +52,7 @@ function ButtonSample() {
       <br />
       <br />
 
-      <button id="status-input" onClick=${toggle}>${statusMsg}</button>
+      <button id="status-input" onClick=${toggle}>${msg}</button>
     </div>
   `;
 }
