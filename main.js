@@ -43,7 +43,8 @@ function ButtonSample() {
     setPressed(!pressed);
   };
 
-  const msg = pressed ? `Active` : "Inactive";
+  const msg = pressed ? "on" : "off";
+  const className = pressed ? "green" : "";
 
   return html`
     <div>
@@ -52,7 +53,9 @@ function ButtonSample() {
       <br />
       <br />
 
-      <button id="status-input" onClick=${toggle}>${msg}</button>
+      <button className=${className} id="status-input" onClick=${toggle}>
+        ${msg}
+      </button>
     </div>
   `;
 }

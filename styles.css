@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 
-body > * {
+body>* {
   /* Prevent content from going to the page edge - especially on mobile.
     Note this should not be on body itself otherwise it gets white edges. */
   padding-left: 15px;
@@ -47,4 +47,9 @@ button {
 button:active {
   background-color: #41b7d8;
   transform: translateY(2px);
+}
+
+.green {
+  background: green;
+  color: white;
 }
