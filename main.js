@@ -64,6 +64,26 @@ function ButtonSample() {
   `;
 }
 
+function CheckboxSample() {
+  const [checked, setChecked] = React.useState(false);
+
+  const onClick = () => {
+    setChecked(!checked);
+  };
+
+  const msg = checked ? "Checked" : "Not checked";
+
+  return html`
+    <div>
+      <label>Teach me React</label>
+      ${" "}
+      <input type="checkbox" id="status-checkbox-input" onClick=${onClick} />
+
+      <p><i>${msg}</i></p>
+    </div>
+  `;
+}
+
 function Counter() {
   const [count, setCount] = React.useState(0);
 
@@ -91,6 +111,9 @@ function App(props) {
 
       <h2>Button input</h2>
       <${ButtonSample} />
+
+      <h2>Toggle input</h2>
+      <${CheckboxSample} />
 
       <h2>Counter</h2>
       <${Counter} />
