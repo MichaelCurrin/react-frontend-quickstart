@@ -32,7 +32,7 @@ The JS file is is loaded as an ES Module, which means we get to load `react` and
 ## Limitations
 
 - Developer experience is limited - no CLI tooling to catch syntax or linting errors.
-- You can't use JSX syntax directly the way this project is setup. But you can use a backticks string with JSX syntax inside it, thanks to the [HTM](https://www.npmjs.com/package/htm) package used here.
+- You can't use JSX syntax directly the way this project is setup. But you can use a backticks string with JSX syntax inside it, thanks to the [HTM](https://www.npmjs.com/package/htm) package used here. Or if you don't like that syntax, you can use Babel Standalone for frontend compilation - see my [JSX](https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/javascript/general/jsx.html) guide.
 - No linting or formatting tool is supplied.
 
 
