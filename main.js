@@ -65,13 +65,13 @@ function ButtonSample() {
 }
 
 function CheckboxSample() {
-  const [checked, setChecked] = React.useState(false);
+  const [isChecked, setIsChecked] = React.useState(false);
 
   const onClick = () => {
-    setChecked(!checked);
+    setChecked(!setIsChecked);
   };
 
-  const msg = checked ? "Checked" : "Not checked";
+  const msg = isChecked ? "Checked" : "Not checked";
 
   return html`
     <div>
