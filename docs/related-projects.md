@@ -1,6 +1,6 @@
 # Related projects
 
-- [![MichaelCurrin - deno-react-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=deno-react-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/deno-react-quickstart)
+- [![MichaelCurrin - react-deno-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=react-deno-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/react-deno-quickstart)
     - React with Deno, as a quickstart. This uses ES Modules to load packages by URL, similar to this React frontend project.
 - [![MichaelCurrin - react-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=react-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/react-quickstart)
     - React with Node, as a quickstart. Using NPM to install packages.
