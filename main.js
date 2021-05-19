@@ -20,7 +20,9 @@ function TextSample() {
   return html`
     <div>
       <label hmltfor="name-input"> Name: </label>
+
       <span> </span>
+
       <input
         id="name-input"
         placeholder="World"
