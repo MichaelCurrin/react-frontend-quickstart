@@ -91,13 +91,9 @@ function Counter() {
 
   return html`
     <div>
-      <p>
-        You clicked ${count} times
-      </p>
+      <p>You clicked ${count} times</p>
 
-      <button onClick=${() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick=${() => setCount(count + 1)}>Click me</button>
     </div>
   `;
 }
@@ -128,10 +124,8 @@ function App(props) {
 
       <p>
         View the ${" "}<a href="${REPO_URL}">source</a>${" "}for this static
-        site on GitHub Pages. Learn more about React in my ${" "}<a
-          href="${RESOURCES_URL}"
-          >React resources</a
-        >${" "} guide.
+        site on GitHub Pages. Learn more about React in my ${" "}
+        <a href="${RESOURCES_URL}">React resources</a>${" "} guide.
       </p>
     </div>
   `;
