@@ -102,7 +102,7 @@ function Counter() {
   `;
 }
 
-// Unfortunately spaces needed to be added explicitly, otherwise the Prettier tool strips them out
+// Unfortunately, spaces needed to be added explicitly, otherwise the Prettier tool strips them out
 // around `a` tags.
 function App(props) {
   const { name } = props;
