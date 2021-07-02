@@ -9,31 +9,45 @@ const RESOURCES_URL =
   "https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/";
 
 function TextSample() {
-  const [value, setValue] = React.useState("");
+  const persistedValue = localStorage.getItem("name") ?? "";
+  const [value, setValue] = React.useState(persistedValue);
 
-  const onChange = (event) => {
+  const onInput = (event) => {
     setValue(event.target.value);
   };
 
-  const msg = value ? `Welcome, ${value}` : "Tell me your name";
+  React.useEffect(() => {
+    localStorage.setItem("name", value);
+  });
+
+  const msg = value
+    ? html`<p>Welcome, <b>${value}</b></p>`
+    : "Tell me your name";
 
   return html`
     <div>
-      <label hmltfor="name-input"> Name: </label>
+      <label hmltfor="name-input">Name: </label>
 
       <span> </span>
 
       <input
         id="name-input"
-        placeholder="World"
         value=${value}
-        onChange=${onChange}
+        onInput=${onInput}
+        placeholder="World"
       />
 
       <br />
       <br />
 
       <div>${msg}</div>
+
+      <p>
+        <i
+          >This component persists data in <code>localStorage</code>, so it will
+          remember values across a page refresh or restarting the browser.</i
+        >
+      </p>
     </div>
   `;
 }
