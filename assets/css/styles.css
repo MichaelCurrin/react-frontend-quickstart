@@ -42,6 +42,7 @@ p a {
 
 button {
   cursor: pointer;
+  padding: 5px;
 }
 
 button:active {
@@ -49,7 +50,7 @@ button:active {
   transform: translateY(2px);
 }
 
-.green {
+.button-pressed {
   background: green;
   color: white;
 }
