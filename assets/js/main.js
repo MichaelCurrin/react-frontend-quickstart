@@ -21,7 +21,7 @@ function TextSample() {
   });
 
   const msg = value
-    ? html`<p>Welcome, <b>${value}</b></p>`
+    ? html`<span>Welcome, <b>${value}</b></span>`
     : "Tell me your name";
 
   return html`
