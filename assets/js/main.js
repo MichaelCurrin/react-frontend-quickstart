@@ -46,7 +46,7 @@ function ButtonSample() {
   };
 
   const msg = pressed ? "on" : "off";
-  const className = pressed ? "green" : "";
+  const className = pressed ? "button-pressed" : "";
 
   return html`
     <div>
@@ -81,7 +81,9 @@ function CheckboxSample() {
       ${" "}
       <input type="checkbox" id="status-checkbox-input" onClick=${onClick} />
 
-      <p><i>${msg}</i></p>
+      <p>
+        <i>${msg}</i>
+      </p>
     </div>
   `;
 }
