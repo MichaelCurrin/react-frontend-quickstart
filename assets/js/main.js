@@ -141,9 +141,9 @@ function App(props) {
       <br />
 
       <p>
-        View the ${" "}<a href="${REPO_URL}">source</a>${" "}for this static
-        site on GitHub Pages. Learn more about React in my ${" "}
-        <a href="${RESOURCES_URL}">React resources</a>${" "} guide.
+        This is a static site hosted for free on GitHub Pages. 
+        See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add this template to your own projects. 
+        Learn more about React in my ${" "}<a href="${RESOURCES_URL}">React resources</a>${" "}guide.
       </p>
     </div>
   `;
