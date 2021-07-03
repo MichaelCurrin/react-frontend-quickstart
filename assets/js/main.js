@@ -8,8 +8,10 @@ const REPO_URL = "https://github.com/MichaelCurrin/react-frontend-quickstart";
 const RESOURCES_URL =
   "https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/";
 
+const NAME_KEY = "name";
+
 function TextSample() {
-  const persistedValue = localStorage.getItem("name") ?? "";
+  const persistedValue = localStorage.getItem(NAME_KEY) ?? "";
   const [value, setValue] = React.useState(persistedValue);
 
   const onInput = (event) => {
@@ -17,7 +19,7 @@ function TextSample() {
   };
 
   React.useEffect(() => {
-    localStorage.setItem("name", value);
+    localStorage.setItem(NAME_KEY, value);
   });
 
   const msg = value
