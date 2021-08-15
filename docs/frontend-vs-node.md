@@ -19,4 +19,4 @@
 - You want to do minified, optimized builds with support for old browsers.
 - Run tests.
 - Add plugins or dev dependencies.
-- Add server-side rendering.
+- Add server-side rendering if you need to.
