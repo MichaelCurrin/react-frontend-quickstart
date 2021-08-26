@@ -86,7 +86,7 @@ function CheckboxSample() {
   const [isChecked, setIsChecked] = React.useState(false);
 
   const onClick = () => {
-    setChecked(!setIsChecked);
+    setIsChecked(!isChecked);
   };
 
   const msg = isChecked ? "Checked" : "Not checked";
@@ -141,8 +141,8 @@ function App(props) {
       <br />
 
       <p>
-        This is a static site hosted for free on GitHub Pages. 
-        See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add this template to your own projects. 
+        This is a static site hosted for free on GitHub Pages.
+        See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add this template to your own projects.
         Learn more about React in my ${" "}<a href="${RESOURCES_URL}">React resources</a>${" "}guide.
       </p>
     </div>
