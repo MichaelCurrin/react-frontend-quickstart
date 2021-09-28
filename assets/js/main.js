@@ -48,10 +48,10 @@ function TextSample() {
       <div>${msg}</div>
 
       <p>
-        <i
-          >This component persists data in <code>localStorage</code>, so it will
-          remember values across a page refresh or restarting the browser.</i
-        >
+        <i>
+          This component persists data in <code>localStorage</code>, so it will
+          remember values across a page refresh or restarting the browser.
+        </i>
       </p>
     </div>
   `;
@@ -147,19 +147,21 @@ function App(props) {
       <br />
 
       <h2>About</h2>
-      <p>
-        This is a static site hosted for free on
-        <a href="${GH_PAGES_RESOURCES_URL}">GitHub Pages</a>.
-      </p>
-      <p>
-        See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add this
-        template to your own projects.
-      </p>
-      <p>
-        Learn more about React in my ${" "}<a href="${REACT_RESOURCES_URL}"
-          >React resources</a
-        >${" "}guide.
-      </p>
+      <div>
+        <p>
+          This is a static site hosted for free on
+          <a href="${GH_PAGES_RESOURCES_URL}">GitHub Pages</a>.
+        </p>
+        <p>
+          See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add
+          this template to your own projects.
+        </p>
+        <p>
+          Learn more about React in my ${" "}<a href="${REACT_RESOURCES_URL}"
+            >React resources</a
+          >${" "}guide.
+        </p>
+      </div>
     </div>
   `;
 }
