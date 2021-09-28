@@ -26,14 +26,12 @@ function TextSample() {
   });
 
   const msg = value
-    ? html`<span>Welcome, <b>${value}</b></span>`
-    : "Tell me your name";
+    ? html`<span>Welcome, <b>${value}</b>.</span>`
+    : "Please tell me your name.";
 
   return html`
     <div>
       <label hmltfor="name-input">Name: </label>
-
-      <span> </span>
 
       <input
         id="name-input"
