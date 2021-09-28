@@ -10,6 +10,7 @@ const RESOURCES_URL =
 
 const NAME_KEY = "name";
 
+/** Sample of using text input and displaying the value. */
 function TextSample() {
   const persistedValue = localStorage.getItem(NAME_KEY) ?? "";
   const [value, setValue] = React.useState(persistedValue);
@@ -54,6 +55,7 @@ function TextSample() {
   `;
 }
 
+/** Sample of a button that can be toggled. */
 function ButtonSample() {
   const [pressed, setPressed] = React.useState(false);
 
@@ -82,6 +84,7 @@ function ButtonSample() {
   `;
 }
 
+/** Sample of a checkbox. */
 function CheckboxSample() {
   const [isChecked, setIsChecked] = React.useState(false);
 
@@ -104,6 +107,7 @@ function CheckboxSample() {
   `;
 }
 
+/** A counter that increments on click. */
 function Counter() {
   const [count, setCount] = React.useState(0);
 
@@ -116,8 +120,8 @@ function Counter() {
   `;
 }
 
-// Unfortunately, spaces needed to be added explicitly, otherwise the Prettier tool strips them out
-// around `a` tags.
+// Unfortunately, spaces needed to be added explicitly with `${" "}`, otherwise
+// the Prettier tool strips them out around `a` tags.
 function App(props) {
   const { name } = props;
 
