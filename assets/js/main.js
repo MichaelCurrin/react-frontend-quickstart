@@ -12,7 +12,11 @@ const GH_PAGES_RESOURCES_URL =
 
 const STORAGE_KEY_NAME = "name";
 
-/** Sample of using text input and displaying the value. */
+/**
+ * Sample of using text input and displaying the value.
+ *
+ * Attemps to get any existing value from localStorage.
+ */
 function TextSample() {
   const persistedValue = localStorage.getItem(STORAGE_KEY_NAME) ?? "";
   const [value, setValue] = React.useState(persistedValue);
