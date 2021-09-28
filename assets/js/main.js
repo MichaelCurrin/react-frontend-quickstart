@@ -10,11 +10,11 @@ const REACT_RESOURCES_URL =
 const GH_PAGES_RESOURCES_URL =
   "https://michaelcurrin.github.io/dev-resources/resources/web/github-pages.html";
 
-const NAME_KEY = "name";
+const STORAGE_KEY_NAME = "name";
 
 /** Sample of using text input and displaying the value. */
 function TextSample() {
-  const persistedValue = localStorage.getItem(NAME_KEY) ?? "";
+  const persistedValue = localStorage.getItem(STORAGE_KEY_NAME) ?? "";
   const [value, setValue] = React.useState(persistedValue);
 
   const onInput = (event) => {
@@ -22,7 +22,7 @@ function TextSample() {
   };
 
   React.useEffect(() => {
-    localStorage.setItem(NAME_KEY, value);
+    localStorage.setItem(STORAGE_KEY_NAME, value);
   });
 
   const msg = value
