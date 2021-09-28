@@ -5,8 +5,10 @@ import React from "https://dev.jspm.io/react@17.0";
 const html = htm.bind(React.createElement);
 
 const REPO_URL = "https://github.com/MichaelCurrin/react-frontend-quickstart";
-const RESOURCES_URL =
+const REACT_RESOURCES_URL =
   "https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/";
+const GH_PAGES_RESOURCES_URL =
+  "https://michaelcurrin.github.io/dev-resources/resources/web/github-pages.html";
 
 const NAME_KEY = "name";
 
@@ -144,10 +146,19 @@ function App(props) {
 
       <br />
 
+      <h2>About</h2>
       <p>
-        This is a static site hosted for free on GitHub Pages.
-        See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add this template to your own projects.
-        Learn more about React in my ${" "}<a href="${RESOURCES_URL}">React resources</a>${" "}guide.
+        This is a static site hosted for free on
+        <a href="${GH_PAGES_RESOURCES_URL}">GitHub Pages</a>.
+      </p>
+      <p>
+        See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add this
+        template to your own projects.
+      </p>
+      <p>
+        Learn more about React in my ${" "}<a href="${REACT_RESOURCES_URL}"
+          >React resources</a
+        >${" "}guide.
       </p>
     </div>
   `;
