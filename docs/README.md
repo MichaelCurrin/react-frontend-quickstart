@@ -2,6 +2,7 @@
 
 - [About](about.md)
 - [Frontend vs Node](frontend-vs-node.md)
-- [Structure](structure.md)
-- [Use this project](use-this-project.md)
+- Manual
+    - [Structure](structure.md)
+    - [Use this project](use-this-project.md)
 - [Related projects](related-projects.md)
