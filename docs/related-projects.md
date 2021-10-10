@@ -1,5 +1,6 @@
 # Related projects
 
+
 ## Frontend only
 
 - [![MichaelCurrin - preact-frontend-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=preact-frontend-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/preact-frontend-quickstart)
@@ -14,6 +15,7 @@
     - React with Node, as a quickstart. Using NPM to install packages.
 - [![MichaelCurrin - preact-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=preact-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/preact-quickstart)
     - Preact with Node, as a quickstart. Using NPM to install packages.
+- [![MichaelCurrin - vite-react-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=vite-react-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/vite-react-quickstart)
 
 
 ## Deno
