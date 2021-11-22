@@ -11,7 +11,8 @@
 ## Features
 
 - Built on React from a CDN.
-- No build step - locally or for CI/CD. Just start a static server in the project root - locally or with GH Pages or Netlify.
+- No build step - locally or for CI/CD. Just start a static server in the project root - locally, or with GH Pages or Netlify. See services [here](https://michaelcurrin.github.io/dev-resources/resources/ci-cd/)
+
 - This light React setup on the frontend is great for small and simple projects.
 - It's also adding interactive behavior to an existing site, without having to rebuild as a Node/React.
 - You can put your JS code as a separate JS script as done here with [main.js](/assets/js/main.js), or even directly on your HTML page if you have a short snippet.
