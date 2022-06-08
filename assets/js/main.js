@@ -1,6 +1,6 @@
 import htm from "https://dev.jspm.io/htm@3.0";
-import ReactDOM from "https://dev.jspm.io/react-dom@17.0";
-import React from "https://dev.jspm.io/react@17.0";
+import ReactDOM from "https://dev.jspm.io/react-dom@18.1";
+import React from "https://dev.jspm.io/react@18.1";
 
 const html = htm.bind(React.createElement);
 
