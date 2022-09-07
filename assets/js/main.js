@@ -1,4 +1,4 @@
-import htm from "https://dev.jspm.io/htm@3.0";
+import htm from "https://dev.jspm.io/htm@3.1.1";
 import ReactDOM from "https://dev.jspm.io/react-dom@18.2.0";
 import React from "https://dev.jspm.io/react@18.2.0";
 
