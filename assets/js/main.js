@@ -151,15 +151,15 @@ function App(props) {
       <h2>About</h2>
       <div>
         <p>
-          This is a static site hosted for free on
+          This is a static site hosted for free on${" "}
           <a href="${GH_PAGES_RESOURCES_URL}">GitHub Pages</a>.
         </p>
         <p>
-          See the ${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add
+          See the${" "}<a href="${REPO_URL}">repo</a>${" "}on GitHub and add
           this template to your own projects.
         </p>
         <p>
-          Learn more about React in my ${" "}<a href="${REACT_RESOURCES_URL}"
+          Learn more about React in my${" "}<a href="${REACT_RESOURCES_URL}"
             >React resources</a
           >${" "}guide.
         </p>
